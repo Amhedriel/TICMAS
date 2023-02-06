@@ -6,8 +6,9 @@
 
 ---
 Empecemos con lo básico.
+Instalemos un editor de texto plano, en mi caso particular uso Visual Studio Code personalizado. Crearemos un directorio en donde crearemos nuestros documentos.
 
-[Desarrollo de páginas Web](/desarrolloDePaginasWeb/README.md)
+Ahora veamos:
 
 1. [Estructura de un proyecto Web](/desarrolloDePaginasWeb/01EstructuraDeUnProyectoWeb.md "Estructura de un proyecto Web")
 2. [Elementos Multi Mediales](/desarrolloDePaginasWeb/02ElementosMultimediales.md "Elementos Multi Mediales")
