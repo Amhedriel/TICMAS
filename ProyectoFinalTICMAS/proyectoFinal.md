@@ -4,6 +4,11 @@
 
 ---
 
+El desafío final de este módulo es construir un formulario en HTML, con la información que tenemos ya podemos hacerlo tranquilamente, creando un formulario de lo que nosotros consideremos e investigar otros elementos posibles para agregar a dicho formulario, pero lo que es muy importante, es el tema de la **validación**, porque si nosotros no llenamos un campo en un formulario que indica que es obligatorio, nos muestra un: "campo obligatorio, llenarlo por favor", como un desafío adicional y para acostumbrarnos lo tratemos de resolver.
+
+
+
+
 ---
 
 [**&#11176;** _Anterior_ &#11007;](/)

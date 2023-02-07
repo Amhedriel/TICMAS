@@ -2,7 +2,7 @@
 
 [**&#11176;** _Anterior_ &#11007;](/desarrolloDePaginasWeb/README.md "Desarrollo de páginas Web")
 [_Volver_ **&ldca;**](/desarrolloDePaginasWeb/README.md "Regresar a página Principal")
-[Siguiente **&#129042;**](/desarrolloDePaginasWeb/02ElementosMultimediales.md "Elementos Multi Mediales")
+[Siguiente **&#129042;**](/desarrolloDePaginasWeb/01.1ElementosDeBloqueDeLinea.md "Elementos de Bloque y elementos de Línea")
 
 ---
 
@@ -13,6 +13,7 @@ Módulo 1
 * Elementos HTML
 * Nombres de archivos
 
+CONTENIDO:
 + [¿Qué debo escribir en código HTML?](#¿qué-debo-escribir-en-código-html)
 + [Nombre de archivos](#nombre-de-archivos)
 + [Composición de un documento HTML](#composición-de-un-documento-html)
@@ -21,6 +22,11 @@ Módulo 1
     + [`<head></head>`](#elemento-headhead)
     + [`<body></body>`](#elemento-bodybody)
     + [Identado](#identado)
+    + [`<img></img>`](#elemento-img-src-alt)
++ [Consola de desarrolladores](#consola-de-desarrolladores)
++ [Elemento `<form></form>`](#elemento-formform)
+    + [`<label></label>`](#elemento-labellabel)
+    + [`<input>`](#elemento-input)
 
 Comencemos con HTML.
 
@@ -77,7 +83,7 @@ De momento crearemos un "Hola mundo" en nuestro html utilizando la extensión de
 ```
 Empecemos a ver que los elementos que encapsulemos dentro del ***tag*** `<body></body>` son aquellos que veremos reflejados en la pantalla del navegador.
 
-![](/media/SintaxisHTML1.svg "")
+![Sintaxis de un elemento](/media/SintaxisHTML1.svg "Sintaxis de un elemento")
 
 El contenido de `<title></title>` se mostrará en la solapa de la pestaña en el navegador, en nuestro caso aparece "Documento", sin embargo ahora lo modificaremos para tenerlo un poco más presente:
 ```html
@@ -176,10 +182,192 @@ Si bien de momento tiene pocos elementos en este momento no es lo mismo presenta
 ```
 Es importante saber que el código que hoy lo estamos haciendo el día de mañana alguien más tendrá que leerlo y un documento de sta manera no es prolijo, no ayuda a la comprensión visual, y tiene muchos peros, tratar de tener buenas prácticas desde el inicio es bueno, así tener el documento lo más limpio, lo más claro posible, por si un compañero o nosotros mismos tengamos que editar esto no resulte difícil entenderlo e interpretarlo.
 
+### Elemento `<img src="" alt="">`
+Es el elemento que maneja las imágenes y veremos ahora el concepto de "atributo" em HTML.
+
+* **atributo** es información complementaria que se le dá a un elemento para poder mostrarse en el navegador.
+
+![Sintaxis con Atributos](/media/SintaxisConAtributos.svg "Sintaxis con Atributos")
+
+En este caso el elemento `img` necesita el atributo *source* `src=""` Que es la ruta de dónde se encuentra la imagen, y el atributo *alternative* `alt=""` Que es el texto alternativo que aparecerá si la imagen no se carga exitosamente.
+
+El 90% de los elementos html tienen un elemento de apertura y uno de cierre.
+
+![](/media/SintaxisHTML1.svg)
+
+El elemento `img` se cierra a sí mismo, no tiene una etiqueta de cierre, simplemente se lo cierra `>`.
+```html
+<body>
+  <img src="/media/SintaxisConAtributos.svg" alt="Sintaxis con atributos de un elemento html">
+</body>
+```
+En caso de no mostrarse la imagen nos aparecerá el texto escrito en el atributo `alt` (Sintaxis con atributos de un elemento html)
+
+> Siempre que se utilice el elemento `img` a parte del `src` necesario para la ruta de la imagen, debemos colocar el atributo 
+> `alt`, si por algún motivo nuestra imagen no se carga exitosamente, el texto debe ser descriptivo a la imagen que se utiliza.
+
+El tener un elemento `img` correctamente escrito ayuda al usuario y al navegador a manejarse en nuestra página y a posicionarla en el buscador. De igual manera podemos tener una imagen enlazada a nuestro `src` que puede estar alojada en algún servidor web, un enlace relativo.
+
+Si tenemos una imagen muy grande y se sale de nuestra pantalla de navegador o al contrario es muy chica, nosotros podemos agregar atributos como `width=""` que es el ancho, y/o `height=""` que es el alto de dicha imagen.
+
+## Consola de desarrolladores
+
+Cada navegador tiene su propia consola de desarrollador, en mi caso utilizo el de Microsoft Edge con la tecla rápida F12.
+Es muy útil para ver los elementos y cómo funcionan. Si nosotros hacemos click derecho e inspeccionar veremos que carga el documento html en el que estamos trabajando, podremos visualizar el `title`, `head`, `body` y todos los elementos que tengamos en dicho documento.
+
+Digamos que necesitamos modificar alguna parte de nuestro documento HTML, en caso que queramos cambiar algún aspecto referido a nuestro `h1` podemos buscarlo en nuestra consola, en el apartado de ``elementos`` y hacer cambios en tiempo real, nos sirve para hacer pruebas antes de modificarlo en el editor. La consola es un entorno para editar código en tiempo real, con CSS aparece la pestaña de ``styles`` y en el apartado de consola podremos ver cómo se comporta el conjunto entero ente HTML, CSS y JavaScrip.
+
+### NOTA:
+Debemos tener en cuenta que los cambios en consola de desarrollador no se guardan los cambios, para guardar los cambios debemos ir a nuestro IDE y guardar ahí el trabajo.
+
+---
+
+## Elemento `<form></form>`
+
+Se pueden ver varios elementos dentro del elemento `form` de formulario,
+
+Un formulario se utiliza para crear un formulario de contacto, formulario de pedir información, debemos pensarlo como si fuera un elemento que nos permite interactuar, o que otra persona nos envíe información de cualquier tipo, Como cuando nos inscribimos en algo, o tener un acceso, eso es un elemento `form`.
+
+Empecemos conociendo el concepto de elementos anidados, en el cual se crea el nivel del `form` y dentro se empieza a crear las etiquetas `tags` y los campos que necesitamos que el usuario complete:
+
+### Elemento `<label></label>`
+
+El elemento `label` define una etiqueta para los elementos del formulario.
+
+El ``<label>`` es útil para los usuarios de lectores de pantalla, porque el lector de pantalla leerá en voz alta la etiqueta cuando el usuario se centre en el elemento de entrada.
+
+```html
+<body>
+  <form action="">
+    <label for="nombre">Nombre</label>
+    <label for="apellido">Apellido</label>
+    <label for="mail">E-mail</label>
+  </form>
+</body>
+```
+El ``for`` atributo de la etiqueta ``label`` debe ser igual al atributo **id** del elemento `input` para unirlos.
+
+Bien, estas son las etiquetas `label` en donde tenemos que acompañar estos elementos con el elemento `input`
+
+### Elemento `<input>`
+El elemento HTML ``input``se usa para crear controles interactivos para formularios basados en la web con el fin de recibir datos del usuario.
+Hay disponible una amplia variedad de tipos de datos de entrada y *widgets* de control, que dependen del dispositivo y el agente de usuario (**user agent**). El elemento ``<input>`` es uno de los más potentes y complejos en todo HTML debido a la gran cantidad de combinaciones de tipos y atributos de entrada.
+
+Nosotros necesitamos que el usuario ingrese texto a nuestro formulario, por lo que indicaremos que el tipo `type` de `input` que vamos a crear es de `type=text`, y lo combinamos con el atributo `placeholder` para dar una ayuda visual al usuario.
+
+```html
+<body>
+
+  <form action="">
+    <label for="">Nombre</label>
+    <input type="text" placeholder="Ingrese su nombre">
+    <label for="">Apellido</label>
+    <input type="text" placeholder="Ingrese su apellido">
+    <label for="">E-mail</label>
+    <input type="email" placeholder="Ingrese su mail">
+    <label for="">Password</label>
+    <input type="password" placeholder="Ingrese su password">
+  </form>
+
+</body>
+```
+Si nosotros investigamos más a fondo, podemos notar que existe el `type="email"`, al igual que el `type="password"` y muchas variedades más, es recomendable buscar el que necesitamos a ver si existe por *default* antes de ingresarlo nosotros mismos.
+
+Podemos ver que el formulario se va renderizando en horizontal, lo arreglaremos más adelante, vayamos viendo el funcionamiento que tenemos actualmente.
+
+**Atributos opcionales `input`**
+
+* **`name`**: El nombre que tendrá el input.
+* **`value`**: Valor que tiene el input.
+* **`type`**: Tipo de input (text | checkbox | number | password | radio | e-mail).
+* **`disabled`**: Estado deshabilitado.
+
+Un desarrollador web tiene que dominar correctamente un formulario.
+
+Ahora veremos cuestiones un poco mas técnicas que un desarrollador web FrontEnd lo tiene que dominar, aún teniendo conocimiento de BackEnd y se le agregue lo que hace falta cuando el usuario envíe la información al servidor, del otro lado "BackEnd" se procese y se envíe a una base de datos, a un correo o donde necesitemos que se envíe y se procese.
+
+**Atributos opcionales `label`**
+
+* **`for`**: El ``id`` del input al que acompaña la etiqueta que los enlaza.
+
+Entonces, hablando de buenas prácticas, cuando nosotros creamos un formulario debemos sumar el atributo `action=""` que es el que define a que página vamos a mandar esto cuando el usuario envíe la información.
+
+```html
+<body>
+
+  <form action="action_page.php" method="get">
+
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+
+    <label for="apellido">Apellido</label>
+    <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido">
+
+    <label for="email">E-mail</label>
+    <input type="email" id="e-mail" name="e-mail" placeholder="Ingrese su e-mail">
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="Ingrese su password">
+
+  </form>
+
+</body>
+```
+**Atributos opcionales `form`**
+
+* **`action`**: URL hacia donde se enviará la respuesta al formulario.
+* **`method`**: Método HTTP que se usará al enviar el formulario, generalmente se trabaja con `"post"`.
+* **`name`**: Nombre del formulario.
+
+Agreguemos ahora un `type"submit"` para enviar el formulario
+```html
+  <form action="action_page.php" method="get">
+
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+
+    <label for="apellido">Apellido</label>
+    <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido">
+
+    <label for="email">E-mail</label>
+    <input type="email" id="e-mail" name="e-mail" placeholder="Ingrese su e-mail">
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="Ingrese su password">
+
+    <input type="submit" value="enviar">
+
+  </form>
+```
+Si nosotros llenamos y enviamos notaremos que la página se recarga y que aparece un signo de interrogación en el enlace, esto sucede porque cuando el método `get` envía la información al servidor, manda las variables en el URL. Lo que pasa si los datos llenados no aparecen es porque no se colocaron los datos en las variables `name`, porque el usuario está ingresando un valor y este valor es el cómo se va a llamar la variable en la cual va a viajar el nombre. Seamos coherentes con los ``name`` que se ponen, si se crea un `input` para que el usuario ingrese su nombre, el `name` debería ser `nombre`.
+
+Ahora, esto esta bien, pero si nosotros trabajaremos con contraseñas no utilizaremos el `method="get"`, por eso en BackEnd se utiliza más el `method="post"`.
+
+## Botones `<button></button>`
+```html
+<button type="button">Hacer click</button>
+```
+**Atributos opcionales**
+
+* **`disabled`**: Estado deshabilitado.
+* **`type`**: Tipo fr botón (button | reset | submit).
+* **`title`**: tooltip.
+* **`name`**: El nombre que tendrá el botón.
+
+
+```html
+```
+```html
+```
+```html
+```
+```html
+```
+
 ---
 
 [**&#11176;** _Anterior_ &#11007;](/desarrolloDePaginasWeb/README.md "Desarrollo de páginas Web")
-[Siguiente **&#129042;**](/desarrolloDePaginasWeb/02ElementosMultimediales.md "Elementos Multi Mediales")
+[Siguiente **&#129042;**](/desarrolloDePaginasWeb/01.1ElementosDeBloqueDeLinea.md "Elementos de Bloque y elementos de Línea")
 
 [_Volver_ **&ldca;**](/desarrolloDePaginasWeb/README.md "Regresar a página Principal")
 [_Subir_ **&#11165;**](#estructura-de-un-proyecto-web "Ir al título")
