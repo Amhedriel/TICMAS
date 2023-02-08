@@ -11,6 +11,11 @@ Módulo 1
     * Audio
     * Insertar video de You Tube
 
+# HTML multimedia
+
+Lo que se denomina multimedia en la web es audio, música, videos y animaciones.
+
+ 
 
 ```
 ```
