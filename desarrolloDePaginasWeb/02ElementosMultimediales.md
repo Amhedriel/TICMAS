@@ -1,7 +1,7 @@
 # Elementos Multi Mediales
 [**&#11176;** _Anterior_ &#11007;](/desarrolloDePaginasWeb/01.1ElementosDeBloqueDeLinea.md "Elementos de Bloque y elementos de Línea")
 [_Volver_ **&ldca;**](/desarrolloDePaginasWeb/README.md "Regresar a página Principal")
-[Siguiente **&#129042;**](/desarrolloDePaginasWeb/03CapaDePresentaci%C3%B3n.md "Capa de presentación")
+[Siguiente **&#129042;**](/desarrolloDePaginasWeb/02.1webSemantica.md "Capa de presentación")
 
 ---
 Módulo 1
@@ -140,13 +140,50 @@ Para reproducir tu video en una página web, se debe hacer lo siguiente:
   * Adhiere cualquier otro parámetro al URL.
 
 ```html
-
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video y Audio HTML</title>
+</head>
+<body>
+  <!-- Contenido embebido -->
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Y1tzkcDb5tI" title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen></iframe>
+</body>
+</html>
 ``` 
+Existen otras plataformas de las cuales también se puede embeber videos como **Vímeo**, la forma de incorporarlos a un documento HTML es exactamente la misma.
+
+---
+
+## Favicon
+Un favicon es una pequeña imagen que se muestra al lado del título en la pestaña del navegador.
+
+```html
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- En este link tenemos nuestro favicon -->
+  <link rel="shortcut icon" href="https://www.w3schools.com/images/favicon.ico" type="image/x-icon">
+  <title>Imagen en documento</title>
+</head>
+<body>
+  <img src="/media/SintaxisConAtributos.svg" alt="Sintaxis con atributos de un elemento html">
+</body>
+</html>
+```
+Si bien no es obligatorio si es más profesional, lo que debemos entender es que debemos ser más profesionales en lo que respecta en html.
 
 ---
 
 [**&#11176;** _Anterior_ &#11007;](/desarrolloDePaginasWeb/01.1ElementosDeBloqueDeLinea.md "Elementos de Bloque y elementos de Línea")
-[Siguiente **&#129042;**](/desarrolloDePaginasWeb/03CapaDePresentaci%C3%B3n.md "Capa de presentación")
+[Siguiente **&#129042;**](/desarrolloDePaginasWeb/02.1webSemantica.md "Capa de presentación")
 
 [_Volver_ **&ldca;**](/desarrolloDePaginasWeb/README.md "Regresar a página Principal")
 [_Subir_ **&#11165;**](#elementos-multi-mediales "Ir al título")
