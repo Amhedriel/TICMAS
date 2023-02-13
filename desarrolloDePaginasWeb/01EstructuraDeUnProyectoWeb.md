@@ -355,15 +355,6 @@ Ahora, esto esta bien, pero si nosotros trabajaremos con contraseñas no utiliza
 * **`name`**: El nombre que tendrá el botón.
 
 
-```html
-```
-```html
-```
-```html
-```
-```html
-```
-
 ---
 
 [**&#11176;** _Anterior_ &#11007;](/desarrolloDePaginasWeb/README.md "Desarrollo de páginas Web")

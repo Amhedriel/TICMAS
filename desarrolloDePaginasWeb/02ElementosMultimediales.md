@@ -85,21 +85,64 @@ La anchura del área de visualización del vídeo en píxeles CSS.
 
 Las compensaciones de tiempo se especifican actualmente como valores float que representan el número de segundos que se va a compensar.
 
-## Videos externos
+### Videos externos
 Podemos utilizar el URL para enlazar nuestro documento.
 
 ```html
   <title>Video HTML</title>
 </head>
 <body>
-  <video width="320" height="240" controls>
+  <video width="320" height="240" controls autoplay loop muted>
+    <source src="https://www.youtube.com/watch?v=5Mv5xoz08Mo&t=1s">
     <source src="/movie.mp4" type="video/mp4">
-    <source src="https://www.youtube.com/watch?v=5Mv5xoz08Mo&t=1s" type="ytvideo/mp4">
-    Tu navegador no soporta la reproducción del video.
+    <track kind="subtitles" src="subtitles_en.vtt" srclang="es">
+    Tu navegador no soporta la reproducción del video, actualiza tu navegador a la última versión.
   </video>
 </body>
 ```
 Se recomienda tener 2 videos iguale con 2 formatos distintos, por si tiene incompatibilidad con alguno de estos.
+
+---
+
+## **`audio`**
+El elemento `<audio></audio>` es muy parecido a `video`, utiliza casi los mismos atributos:
+
+* *`autoplay`*
+* *`buffered`*
+* *`controls`*
+* *`loop `*
+* *`preload `*
+* *`src`*
+
+Los formatos de audio soportados son:
+
+* **MP3** (mpeg/mp3)
+* **Wav** (audio/wav)
+* **Ogg** (audio/ogg)
+
+```html
+  <audio controls>
+    <source src="/Tono.mp3" type="audio/mp3">
+    Tu navegador no soporta la reproducción del audio, actualiza tu navegador a la última versión.
+  </audio>
+```
+
+## Embeber videos de YouTube
+La manera más sencilla de reproducir videos en HTML, es al usar YouTube.
+
+Para reproducir tu video en una página web, se debe hacer lo siguiente:
+
+  * Sube tu video a la plataforma de YouTube.
+  * Toma nota de el `id` del video.
+  * Define el elemento `<iframe></iframe>` in tu página web.
+  * Deja el atributo `src` con el URL del video.
+  * Utiliza el ancho `width` y el alto `height` para especificar las dimensiones del Reproductor.
+  * Adhiere cualquier otro parámetro al URL.
+
+```html
+
+``` 
+
 ---
 
 [**&#11176;** _Anterior_ &#11007;](/desarrolloDePaginasWeb/01.1ElementosDeBloqueDeLinea.md "Elementos de Bloque y elementos de Línea")

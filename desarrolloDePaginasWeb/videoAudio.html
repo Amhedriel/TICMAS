@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video y Audio HTML</title>
+</head>
+<body>
+  <video width="320" height="240" controls autoplay loop muted>
+    <source src="https://www.youtube.com/watch?v=5Mv5xoz08Mo&t=1s">
+    <source src="/movie.mp4" type="video/mp4">
+    <track kind="subtitles" src="subtitles_en.vtt" srclang="es">
+    Tu navegador no soporta la reproducción del video, actualiza tu navegador a la última versión.
+  </video>
+  <br>
+  <hr>
+  <br>
+  <audio controls>
+    <source src="/Tono.mp3" type="audio/mp3">
+    Tu navegador no soporta la reproducción del audio, actualiza tu navegador a la última versión.
+  </audio>
+  <br>
+  <hr>
+  <br>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Y1tzkcDb5tI" title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen></iframe>
+</body>
+</html>
