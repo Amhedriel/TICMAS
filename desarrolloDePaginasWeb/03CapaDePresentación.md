@@ -51,8 +51,40 @@ Veremos que nuestro elemento ``h1`` Es azul y tiene un tamaño de 12 px.
 En la consola del desarrollador podemos ver, en la parte derecha de la consola la pestaña de **Styles** lo que nos permitirá ver y hacer cambios en las propiedades y valores de cada elemento que tengamos en CSS.
 
 No es necesario aprenderse todas las propiedades de CSS, como ayuda se puede utilizar esta [referencia](https://htmlcheatsheet.com/css/ "HTML cheat-sheet")
+
+## Estilos internos
+
+Ahora agregaremos algunos elementos a nuestro documento html.
+
+```HTML
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS</title>
+  <style>
+    h1{
+      color: blue;
+      font-size: 12px;
+    }
+
+    p{
+      color: red;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>El título principal</h1>
+
+  <p>Este es un párrafo.</p>
+
+  <h2>Un título secundario o subtítulo</h2>
+
+  <p>Otro párrafo</p>
+</body>
 ```
-```
+
 ```
 ```
 ```
@@ -72,3 +104,4 @@ No es necesario aprenderse todas las propiedades de CSS, como ayuda se puede uti
 
 [_Volver_ **&ldca;**](/desarrolloDePaginasWeb/README.md "Regresar a página Principal")
 [_Subir_ **&#11165;**](#capa-de-presentación "Ir al título")
+ubuntu-release-upgrader-core
