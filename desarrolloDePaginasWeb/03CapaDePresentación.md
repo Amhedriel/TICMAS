@@ -10,6 +10,10 @@ Hasta ahora se estuvo trabajando con la estructura del cómo escribir correctame
 CSS *(Cascading Styles Sheets)* u Hojas de Estilos en Cascada, nos va a permitir aplicar los estilos que nosotros queremos, de manera selectiva a los elementos HTMl.
 
 ## Sintaxis
+
+Tenemos 3 formas de insertar una hoja de estilo:
+* CSS  
+
 Digamos que nosotros queremos dar algo de estilo a uno de nuestros elemento de HTML, como ejemplo, queremos que nuestro título principal `h1{}` tenga letras de color azul `color: blue;` y el tamaño de fuente tenga 12 pixeles de tamaño `font-size: 12px;`
 
 <br>
@@ -84,6 +88,8 @@ Ahora agregaremos algunos elementos a nuestro documento html.
   <p>Otro párrafo</p>
 </body>
 ```
+## Estilos inline
+
 
 ```
 ```
