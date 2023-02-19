@@ -1,0 +1,23 @@
+h1 {
+  color: blue;
+  font-weight: bold;
+  border: 1px solid black;
+  margin-top: 40px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  /* padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 15px; */
+  padding: 20px 15px
+}
+section{
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+p {
+  color: red;
+}

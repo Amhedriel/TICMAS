@@ -1,15 +1,26 @@
 # Extendiendo CSS y Frameworks
 
-[**&#11176;** _Anterior_ &#11007;](/desarrolloDePaginasWeb/03CapaDePresentaci%C3%B3n.md "Capa de presentación")
+
+[**&#11176;** _Anterior_ &#11007;](/desarrolloDePaginasWeb/03.1SelectoresTipografiasIDClass.md "Capa de Presentación II")
 [_Volver_ **&ldca;**](/desarrolloDePaginasWeb/README.md "Regresar a página Principal")
 [Siguiente **&#129042;**](/desarrolloDePaginasWeb/05AlojamientoYTipoDeServidores.md "Alojamiento y Tipo de Servidores")
 
 ---
 
+
+
+
+
+
+
+
+
+
+
+
 ---
 
-[**&#11176;** _Anterior_ &#11007;](/desarrolloDePaginasWeb/03CapaDePresentaci%C3%B3n.md "Capa de presentación")
-
+[**&#11176;** _Anterior_ &#11007;](/desarrolloDePaginasWeb/03.1SelectoresTipografiasIDClass.md "Capa de Presentación II")
 [Siguiente **&#129042;**](/desarrolloDePaginasWeb/05AlojamientoYTipoDeServidores.md "Alojamiento y Tipo de Servidores")
 
 

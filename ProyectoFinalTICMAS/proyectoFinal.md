@@ -9,6 +9,8 @@ El desafío final de este módulo es construir un formulario en HTML, con la inf
 ## Media
 Llegará el día que subamos el proyecto final a un servidor en internet, y más allá del proyecto lo ideal sería subir las cosas a internet y no solo ver con la computadora y un navegador, familiarizarse con como se vé lo que estamos desarrollando enn un celular, en navegador, en tablet y haciendo la mejor práctica.
 
+## Comentarios coherentes
+Comentar la documentación de manera que nos ayude a entender lo que hicimos en cada apartado HTML, CSS, JavaScript.
 
 ---
 
