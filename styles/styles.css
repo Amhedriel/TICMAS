@@ -1,3 +1,8 @@
+* {
+  color: blue;
+  font-family: 'Roboto', sans-serif;
+}
+
 h1 {
   color: blue;
   font-weight: bold;
@@ -12,12 +17,30 @@ h1 {
   padding-left: 15px; */
   padding: 20px 15px
 }
+
 section{
   width: 300px;
   border: 15px solid green;
   padding: 50px;
   margin: 20px;
 }
-p {
+
+p,span {
   color: red;
+}
+
+#mi_parrafo{
+  color: green;
+  font-size: 23px;
+  border: 1px solid orange;
+}
+
+.estaesmiclase{
+  font-weight: bold;
+  color: lightblue;
+}
+
+section h2{
+  font-weight: 800;
+  color: grey;
 }
