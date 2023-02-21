@@ -2,10 +2,17 @@
 
 [**&#11176;** _Anterior_ &#11007;](/desarrolloDePaginasWeb/03.1SelectoresTipografiasIDClass.md "Capa de Presentación II")
 [_Volver_ **&ldca;**](/desarrolloDePaginasWeb/README.md "Regresar a página Principal")
-[Siguiente **&#129042;**](/desarrolloDePaginasWeb/05AlojamientoYTipoDeServidores.md "Alojamiento y Tipo de Servidores")
+[Siguiente **&#129042;**](/desarrolloDePaginasWeb/04.1Bootstrap.md "Boostrap")
 
 ---
+
 En este módulo se trabajará con los conceptos clave del *responsive web design*. Aprenderás cómo transformar tu página web, originalmente solo para *desktop*, en *ful-responsive*; es decir, que se adapte a cualquier dispositivo y que siga visualizando correctamente.
+
+* [Responsive Web Design](#responsive-web-design)
+* [Meta Viewport](#meta-viewport)
+* [Construir una grilla responsiva](#construir-una-grilla-responsiva)
+* [Media queries](#media-queries)
+* [Full Responsive](#full-responsive)
 
 Después de esto, avanzaremos con los *frameworks* más populares del mercado, de manera tal que, habiendo entendido los conceptos más importantes, puedas utilizarlos para avanzar rápidamente en el desarrollo *full-responsive*.
 
@@ -26,7 +33,7 @@ Diseño para la mejor experiencia de todos los Usuarios:
 
 Para avanzar con la parte técnica, debemos conocer algunos elementos.
 
-### Meta Viewport 
+## Meta Viewport 
 El *Viewport* es una de las etiquetas más representativas de la web móvil, que nos permite configurar cómo debe interpretar una página el navegador web para móviles.
 
 ```html
@@ -311,18 +318,10 @@ Acá lo importante o que se recomienda mucho, es que una vez visto todo lo bási
 
 Una sugerencia es, investigar, lo que no se puede saber es el tema de *viewport*, `grid` y `@media`, de ahí para adelante se puede conocer, Googlear si hay mas *Frameworks*, y lo otro muy importante es seguirlos en redes sociales, para ir viendo cómo se van actualizando, que es lo nuevo que se puede hacer, que es lo que no estamos pudiendo hacer, porque cada proyecto que se realice, va a ser distinto y las especificaciones de cada uno va a cambiar, habrán clientes flexibles que dejen trabajar con librerías. lo cual nos permitirá ahorrar muchísimo tiempo.
 
-### **``**
-### **``**
-```
-```
-```
-```
-
-
 ---
 
 [**&#11176;** _Anterior_ &#11007;](/desarrolloDePaginasWeb/03.1SelectoresTipografiasIDClass.md "Capa de Presentación II")
-[Siguiente **&#129042;**](/desarrolloDePaginasWeb/05AlojamientoYTipoDeServidores.md "Alojamiento y Tipo de Servidores")
+[Siguiente **&#129042;**](/desarrolloDePaginasWeb/04.1Bootstrap.md "Boostrap")
 
 
 [_Volver_ **&ldca;**](/desarrolloDePaginasWeb/README.md "Regresar a página Principal")
