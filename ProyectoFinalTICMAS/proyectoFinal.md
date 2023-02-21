@@ -14,6 +14,11 @@ Llegará el día que subamos el proyecto final a un servidor en internet, y más
 ## Comentarios coherentes
 Comentar la documentación de manera que nos ayude a entender lo que hicimos en cada apartado HTML, CSS, JavaScript.
 
+## Responsive
+Recordar la grilla para el proyecto que para *desktop* tienen que tener columnas desde 12 a 16.
+
+![](/media/GridDesktop.svg)
+
 ---
 
 [**&#11176;** _Anterior_ &#11007;](/)
