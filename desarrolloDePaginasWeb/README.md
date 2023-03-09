@@ -11,10 +11,23 @@ Instalemos un editor de texto plano, en mi caso particular uso Visual Studio Cod
 Ahora veamos:
 
 1. [Estructura de un proyecto Web](/desarrolloDePaginasWeb/01EstructuraDeUnProyectoWeb.md "Estructura de un proyecto Web")
+
+    1.1. [Elementos de Bloque y elementos de Línea](/desarrolloDePaginasWeb/01.1ElementosDeBloqueDeLinea.md)
+
 2. [Elementos Multi Mediales](/desarrolloDePaginasWeb/02ElementosMultimediales.md "Elementos Multi Mediales")
+
+    2.1. [Web semántica](/desarrolloDePaginasWeb/02.1webSemantica.md)
+
 3. [Capa de presentación](/desarrolloDePaginasWeb/03CapaDePresentaci%C3%B3n.md "Capa de presentación")
+
+    3.1. [Capa de presentación II](/desarrolloDePaginasWeb/03.1SelectoresTipografiasIDClass.md)
+
 4. [Extendiendo CSS y Frameworks](/desarrolloDePaginasWeb/04ExtendiendoCSSYSusFrameworks.md "Extendiendo CSS y Frameworks")
+
+    4.1. [Bootstrap](/desarrolloDePaginasWeb/04.1Bootstrap.md)
+
 5. [Alojamiento y Tipo de Servidores](/desarrolloDePaginasWeb/05AlojamientoYTipoDeServidores.md "Alojamiento y Tipo de Servidores")
+
 6. [Cierre](/desarrolloDePaginasWeb/06Cierre.md "Cierre")
 
 ## Comentarios en HTML
